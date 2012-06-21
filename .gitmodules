@@ -1,3 +1,6 @@
 [submodule "virtualkeyboard"]
 	path = virtualkeyboard
 	url = git@github.com:adrianomelo/virtualkeyboard.git
+[submodule "scanning"]
+	path = scanning
+	url = git@github.com:adrianomelo/scanning.git
