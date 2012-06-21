@@ -1,0 +1,3 @@
+[submodule "virtualkeyboard"]
+	path = virtualkeyboard
+	url = git@github.com:adrianomelo/virtualkeyboard.git
