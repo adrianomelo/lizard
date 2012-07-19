@@ -1,6 +1,3 @@
-[submodule "virtualkeyboard"]
-	path = virtualkeyboard
-	url = https://github.com/adrianomelo/virtualkeyboard.git
 [submodule "scanning"]
 	path = scanning
 	url = https://github.com/adrianomelo/scanning.git
