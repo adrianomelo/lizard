@@ -1,8 +1,10 @@
 import QtQuick 1.1
 import com.adrianomelo 1.0
 import "../virtualkeyboard/"
+import "../texteditor/"
 
-Item {
+Rectangle {
+    color: "#8e8d98"
     width: 800
     height: 300
 
@@ -11,8 +13,25 @@ Item {
         control.next();
     }
 
-    VirtualKeyboard {
-        anchors.centerIn: parent
+    Item {
+        anchors.fill: parent
+
+        TextEditor {
+            id: textEditor
+
+            height: parent.height - virtualKeyboard.height
+
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: virtualKeyboard.top
+        }
+
+        VirtualKeyboard {
+            id: virtualKeyboard
+
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: parent.bottom
+        }
     }
 
     ScanningControl {
