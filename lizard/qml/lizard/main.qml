@@ -30,4 +30,9 @@ Item {
     Keys.onPressed: {
         control.select();
     }
+
+    MouseArea {
+        anchors.fill: parent
+        onPressed: control.select();
+    }
 }
